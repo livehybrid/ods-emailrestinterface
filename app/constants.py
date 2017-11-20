@@ -1,0 +1,24 @@
+# Worker config
+CONFIG_WORKER_MODE_EMAIL = 'email'
+CONFIG_WORKER_MODE_SMS = 'SMS'
+CONFIG_EMAIL_OTP_TEMPLATE_NAME = 'email_otp_template.j2'
+CONFIG_EMAIL_CONFIRMATION_TEMPLATE_NAME = 'email_confirmation_template.j2'
+CONFIG_SMS_OTP_TEMPLATE_NAME = 'sms_otp_template.j2'
+CONFIG_SMS_CONFIRMATION_TEMPLATE_NAME = 'sms_confirmation_template.j2'
+
+# Message fields
+MESSAGE_FIELD_FIRST_NAME = 'first_name'
+MESSAGE_FIELD_SURNAME = 'surname'
+MESSAGE_FIELD_TITLE = 'title'
+MESSAGE_FIELD_SUBJECT = 'subject'
+MESSAGE_FIELD_EMAIL = 'recipient_email_address'
+MESSAGE_FIELD_MOBILE = 'mobile_number'
+MESSAGE_FIELD_CONTENT = 'content'
+MESSAGE_FIELD_ONETIME_PASS = 'onetime_pass'
+
+# Message Mimetext fields
+MIMETEXT_FIELD_SUBJECT = 'Subject'
+MIMETEXT_FIELD_RECIPIENT_TO = 'To'
+MIMETEXT_FIELD_SENDER_FROM = 'From'
+
+MOBILE_NUMBER_COUNTRY_CODE = '+44'

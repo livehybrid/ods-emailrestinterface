@@ -1,0 +1,8 @@
+# Use: The web server for the worker
+tornado>=4.4.1,<5.0
+
+#Use: To populate comms templates
+jinja2>=2.9.6
+
+#Use: To send http requests to email or sms gateways
+requests>=2.12.1,<3.0
