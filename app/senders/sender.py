@@ -1,6 +1,5 @@
 from abc import ABCMeta, abstractmethod
 
-
 class Sender(metaclass=ABCMeta):
 
     @abstractmethod

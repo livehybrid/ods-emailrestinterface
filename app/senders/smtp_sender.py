@@ -15,9 +15,11 @@ class SMTPSender(Sender):
 
     def __init__(self):
         self.smtp_client = smtplib.SMTP(config.EMAIL_GATWEWAY_URI)
-        self.smtp_client.starttls()
+
+        if config.EMAIL_USE_TLS == True: self.smtp_client.starttls()
+
         self.worker_email = config.WORKER_EMAIL_ADDRESS
-        self.smtp_client.login(self.worker_email,
+        if config.EMAIL_LOGIN == True: self.smtp_client.login(self.worker_email,
                                config.WORKER_EMAIL_PASSWORD)
 
     @abstractmethod
