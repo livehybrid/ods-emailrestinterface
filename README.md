@@ -19,11 +19,17 @@ Exposes a port (default: 10010) which can be accessed using a HTTP request:
 ### Runtime Configuration (supplied as environment variables passed using "-e" or Rancher
 
  EMAIL_USE_TLS - Default: True - Connects to SMTP using TLS connection (Use "False" for MailCatcher)
+
  EMAIL_LOGIN - Default: True - Connects to SMTP using username and password (WORKER_EMAIL_ADDRESS and WORKER_EMAIL_PASSWORD) (Use "False" for MailCatcher)
+
  MESSAGE_WORKER_PORT - Default: 10010 - Port to run Web Interface on
+
  MESSAGE_WORKER_EMAIL_GATEWAY_URI - Default: stub-email-gateway.co.uk:25 - SMTP server (incl port)
+
  SMS_RECIPIENT_EMAIL_SUFFIX - Default: @sms.nhs.net - String to append to Mobile numbers for sending SMS via email (NHS Mail SMS Service)
+
  WORKER_EMAIL_ADDRESS - Default: ods.test@email.net - Username for SMTP login AND used as the From field when sending email
+ 
  WORKER_EMAIL_PASSWORD - Default: stub-password - Password for the SMTP login
 
 ### Run Unit Tests
